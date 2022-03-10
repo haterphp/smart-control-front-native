@@ -5,6 +5,12 @@ export const Layout = class extends Component {
         super('layout');
     }
 
+    slots($dom) {
+        return {
+            content: $dom
+        }
+    }
+
     template() {
         return `
             <div id="child-container" class="container"></div>

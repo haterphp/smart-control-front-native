@@ -50,8 +50,9 @@ export class Component {
 
     async beforeCreate(){}
     async afterCreate($template){}
+    slots($template){ return {} }
     async _registerChildTrigger(childFn) {
-        return childFn(this.dom);
+        return childFn(this.slots(this.dom));
     }
     template(){ return "" };
 }
@@ -66,7 +67,7 @@ export const register = async (
     $container,
     props = {},
     mode = "replace",
-    childFn = (parent) => {},
+    childFn = (slots) => {},
 ) => {
     const c = new Component();
     c._appendProps(props);
