@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Smart Control</title>
+
+    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/azia.min.css">
+</head>
+<body>
+<div class="az-header">
+    <div class="container">
+        <div class="az-header-left">
+            <a href="index.html" class="az-logo" data-header-logo>smart control</a>
+        </div>
+
+        <div class="az-header-menu">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link" data-header-link-index>Control point management</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="access.html" class="nav-link" data-header-link-access>Access groups</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="staff.html" class="nav-link" data-header-link-staff>Staff management</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="logging.html" class="nav-link" data-header-link-logging>Logging and analytics</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="az-header-right">
+            <div class="dropdown az-profile-menu">
+                <a href="#" class="az-img-user" data-header-user>
+                    <img src="assets/images/avatar.jpg" alt="John Doe">
+                </a>
+
+                <div class="dropdown-menu d-block">
+                    <div class="az-dropdown-header d-sm-none">
+                        <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                    </div>
+                    <div class="az-header-profile">
+                        <div class="az-img-user" data-header-user-image>
+                            <img src="assets/images/avatar.jpg" alt="John Doe">
+                        </div>
+                        <h6 data-header-user-name>John Doe</h6>
+                    </div>
+
+                    <a href="page-signin.html" class="dropdown-item" data-header-signout>
+                        <i class="fas fa-sign-out-alt"></i> Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="az-content az-content-dashboard">
+    
+<div class="container">
+    <div class="az-content-body">
+        <div class="az-dashboard-one-title">
+            <div>
+    <h2 class="az-dashboard-title" data-page-title>Control Points</h2>
+    <p class="az-dashboard-text" data-page-description>Here you can manage your control points.</p>
+</div>
+        </div>
+
+        <div class="treeview">
+            <ul>
+                <!-- Control Point -->
+                <li>
+                    <div class="treeview__level" data-level="A" data-pol>
+                        <span class="level-title" data-pob-name>Office building</span>
+                        <div class="treeview__level-btns">
+                            <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <ul>
+                        <!-- Control Point -->
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Security</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- / Control Point -->
+
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Buffet</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Floor 1</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="treeview__level" data-level="C" data-pol>
+                                        <span class="level-title" data-pob-name>Meeting room 1</span>
+                                        <div class="treeview__level-btns">
+                                            <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="treeview__level" data-level="C" data-pol>
+                                        <span class="level-title" data-pob-name>Meeting room 2</span>
+                                        <div class="treeview__level-btns">
+                                            <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Floor 2</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="treeview__level" data-level="C" data-pol>
+                                        <span class="level-title" data-pob-name>Office of the head of department</span>
+                                        <div class="treeview__level-btns">
+                                            <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="treeview__level" data-level="A" data-pol>
+                        <span class="level-title" data-pob-name>Recreation complex</span>
+                        <div class="treeview__level-btns">
+                            <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Floor 1</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <span class="level-title" data-pob-name>Floor 2</span>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-edit class="btn btn-sm level-edit"><i class="fa fa-pen"></i></button>
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-trash"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="treeview__level" data-level="B" data-pol>
+                                <input type="text" data-pob-input>
+                                <div class="treeview__level-btns">
+                                    <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-ban"></i></button>
+                                    <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-check"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="treeview__level" data-level="A" data-pol>
+                        <input type="text" data-pob-input>
+                        <div class="treeview__level-btns">
+                            <button data-pob-remove class="btn btn-sm level-remove"><i class="fa fa-ban"></i></button>
+                            <button data-pob-add class="btn btn-sm level-add"><i class="fa fa-check"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="treeview__level level-empty" data-poba></div>
+                </li>
+                <!-- / Control Point -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>

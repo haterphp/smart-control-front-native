@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Smart Control</title>
+
+    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/azia.min.css">
+</head>
+<body>
+<div class="az-header">
+    <div class="container">
+        <div class="az-header-left">
+            <a href="index.html" class="az-logo" data-header-logo>smart control</a>
+        </div>
+
+        <div class="az-header-menu">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link" data-header-link-index>Control point management</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="access.html" class="nav-link" data-header-link-access>Access groups</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="staff.html" class="nav-link" data-header-link-staff>Staff management</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="logging.html" class="nav-link" data-header-link-logging>Logging and analytics</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="az-header-right">
+            <div class="dropdown az-profile-menu">
+                <a href="#" class="az-img-user" data-header-user>
+                    <img src="assets/images/avatar.jpg" alt="John Doe">
+                </a>
+
+                <div class="dropdown-menu ">
+                    <div class="az-dropdown-header d-sm-none">
+                        <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                    </div>
+                    <div class="az-header-profile">
+                        <div class="az-img-user" data-header-user-image>
+                            <img src="assets/images/avatar.jpg" alt="John Doe">
+                        </div>
+                        <h6 data-header-user-name>John Doe</h6>
+                    </div>
+
+                    <a href="page-signin.html" class="dropdown-item" data-header-signout>
+                        <i class="fas fa-sign-out-alt"></i> Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="az-content az-content-dashboard">
+    
+<div class="container">
+    <div class="az-content-body">
+        <div class="az-dashboard-one-title">
+            <div>
+    <h2 class="az-dashboard-title" data-page-title>Logging and analytics</h2>
+    <p class="az-dashboard-text" data-page-description>Track delays and unauthorized access attempts.</p>
+</div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="col-md-10">
+                <div class="mb-4">
+                    <h4 class="mb-3" data-log-day>Today</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+                <div class="mb-4">
+                    <h4 class="mb-3" data-log-day>29 July 2021</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+                <div>
+                    <h4 class="mb-3" data-log-day>28 July 2021</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+                <div>
+                    <h4 class="mb-3" data-log-day>27 July 2021</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+                <div>
+                    <h4 class="mb-3" data-log-day>26 July 2021</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+                <div>
+                    <h4 class="mb-3" data-log-day>25 July 2021</h4>
+                    <table class="table table-bordered">
+    <thead>
+    <tr>
+        <th class="wd-10p">Time</th>
+        <th class="wd-25p">Employee's full name</th>
+        <th class="wd-40p">Control Point</th>
+        <th class="wd-10p">Access</th>
+        <th class="wd-15p text-right">Images</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-log-row-time>10:11:27</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 103</td>
+        <td>
+            <span class="badge badge-success" data-log-row-access>Allowed</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    <tr>
+        <td data-log-row-time>10:12:50</td>
+        <td data-log-row-staff>Jogn Doe</td>
+        <td data-log-row-point>Office 200</td>
+        <td>
+            <span class="badge badge-danger" data-log-row-access>Prohibited</span>
+        </td>
+        <td class="text-right">
+            <a href="#" data-log-row-link>View images</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label class="mb-4">
+                    <span class="d-inline-block mb-2">Employee's name</span>
+                    <input type="text" class="form-control" data-filter-name>
+                </label>
+
+                <label class="mb-4">
+                    <span class="d-inline-block mb-2">Control point</span>
+                    <input type="text" class="form-control" data-filter-point>
+                </label>
+
+                <label class="mb-4">
+                    <span class="d-inline-block mb-2">Access</span>
+                    <select class="form-control w-100" data-filter-access>
+                        <option value="all">All</option>
+                        <option value="allowed">Allowed</option>
+                        <option value="prohibited">Prohibited</option>
+                    </select>
+                </label>
+
+                <label class="mb-4">
+                    <span class="d-inline-block mb-2">Date</span>
+                    <input type="date" class="form-control" data-filter-date>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
