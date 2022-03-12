@@ -22,9 +22,13 @@ export const Greeting = class extends Component {
         })
 
         this.registerObserver('message', (e) => {
-            console.log(e.detail.value)
             const {name} = this.props;
             $template.innerHTML = `${e.detail.value} ${name}`
+        })
+
+        this.registerObserver('name', (e) => {
+            const {message} = this.state;
+            $template.innerHTML = `${message} ${e.detail.value}`
         })
     }
 

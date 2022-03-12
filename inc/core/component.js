@@ -17,7 +17,7 @@ export class Component {
         return new Proxy(state, {
             set: (target, p, value) => {
                 target[p] = value;
-                this.event.dispatch(this.#makeObserverName(p), { target, p, value })
+                this.event.dispatch(this.#makeObserverName(p), { target, prop: p, value })
                 return true;
             }
         })
@@ -25,6 +25,7 @@ export class Component {
 
     setState(name, value){
         this.state[name] = value;
+        return this;
     }
 
     registerObserver(name, callback){
@@ -52,7 +53,12 @@ export class Component {
     async afterCreate($template){}
     slots($template){ return {} }
     async _registerChildTrigger(childFn) {
-        return childFn(this.slots(this.dom));
+        return await childFn(this.slots(this.dom));
+    }
+    updateProps(name, value){
+        this.props[name] = value;
+        this.event.dispatch(this.#makeObserverName(name), { prop: name, target: this.props, value })
+        return this;
     }
     template(){ return "" };
 }
