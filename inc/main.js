@@ -1,12 +1,25 @@
-// import './router.js';
-import {register} from "./core/component.js";
-import {Layout} from "./app/layout.js";
-import {Greeting} from "./app/components/greeting.js";
+import {Router} from "./core/router.js";
+import {LoginPage} from "./app/pages/login.page.js";
+import {RegisterPage} from "./app/pages/register.page.js";
 
-register(Layout, document.querySelector('#root'), {}, 'replace', async ({content}) => {
-    await register(Greeting, content, { name: "Voice" }, 'append')
-    const greeting = await register(Greeting, content, { name: "Vlad" }, 'append');
-    setInterval(() => {
-        greeting.updateProps('name', (Math.random() + 1).toString(36).substring(2, 10));
-    }, 5000);
-})
+
+const $root = document.querySelector('#root')
+
+const openCallback = async (target) => {
+    if(target.component) target.component($root);
+}
+const notFoundCallback = async () => {
+    $root.innerHTML = 'page not found';
+}
+
+const router = [
+    {url: '/', component: null},
+    {url: 'login', component: LoginPage},
+    {url: 'register', component: RegisterPage},
+];
+
+Router(
+    router,
+    openCallback,
+    notFoundCallback,
+)
